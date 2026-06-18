@@ -21,12 +21,11 @@
 
 | Format | Command |
 |---|---|
-| **Flathub** | `flatpak install flathub com.buxjr.melia` |
 | **Snap Store** | `sudo snap install melia` |
 | **.deb (Debian/Ubuntu)** | Download `melia_<ver>_amd64.deb` from [Releases](https://github.com/buxjr311/melia-app/releases/latest) and `sudo dpkg -i` |
 | **AppImage (any distro)** | Download `melia_<ver>_x64.AppImage` from [Releases](https://github.com/buxjr311/melia-app/releases/latest), `chmod +x`, and run |
 
-All four formats track the same release cadence. Flathub and Snap Store auto-update; the .deb and AppImage do not — re-download for new versions.
+All three formats track the same release cadence. The Snap Store auto-updates; the .deb and AppImage do not, so re-download for new versions.
 
 ## What it does
 
@@ -46,7 +45,7 @@ Free for one email account. A one-time **$10** unlock removes the account cap. N
 
 ## About this repository
 
-This repository hosts **release artifacts only** — `.deb`, `.AppImage`, `.flatpak`, `.snap`, the Flatpak `extra-data` binary tarball, the packaging-assets tarball, and `SHA256SUMS` / `SHA256SUMS.asc` per release. The source is proprietary and lives in a private repository.
+This repository hosts release artifacts only: the `.deb`, `.AppImage`, `.flatpak`, and `.snap` builds, the binary tarball the Flatpak build pulls from, the packaging-assets tarball, and `SHA256SUMS` / `SHA256SUMS.asc` per release. The source is proprietary and lives in a private repository.
 
 Verifying a download:
 
