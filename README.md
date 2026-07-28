@@ -99,10 +99,6 @@ A **Release Tide** timeline in Settings → Updates lets you scroll back through
 
 **Dressed to match your desktop.** Light, Dark, and time-based Auto, plus around 25 popular Linux palettes — Catppuccin, Nord, Dracula, Gruvbox, Tokyo Night, Solarized, Rosé Pine, Everforest and more — and a customizable accent color.
 
-<p align="center">
-  <img src="https://melia.buxjr.com/img/melia_connection_monitor.png" alt="The Connection Monitor showing every outbound connection Melia has made" width="820">
-</p>
-
 ## Features
 
 <details>
