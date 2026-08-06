@@ -36,7 +36,7 @@
 
 ## Install
 
-Melia ships for **x86-64 Linux** in four formats, all built from the same release.
+Melia ships for **x86-64 Linux** in five formats, all built from the same release.
 
 **Snap** — auto-updates through the Snap Store.
 
@@ -51,6 +51,15 @@ curl -LO https://github.com/buxjr311/melia-app/releases/latest/download/SHA256SU
 grep '\.deb$' SHA256SUMS   # find the current filename
 # then download that file from the Releases page and:
 sudo dpkg -i melia_<version>_amd64.deb
+```
+
+**Fedora / RHEL** — updates in-app.
+
+```bash
+curl -LO https://github.com/buxjr311/melia-app/releases/latest/download/SHA256SUMS
+grep '\.rpm$' SHA256SUMS    # find the current filename
+# then download that file from the Releases page and:
+sudo dnf install ./melia-<version>-1.x86_64.rpm
 ```
 
 **AppImage** — any distribution, no install step. Updates in-app.
@@ -75,7 +84,7 @@ Melia checks for new versions and tells you what changed, then does the right th
 | How you installed | How updates arrive |
 |---|---|
 | Snap Store | Automatic, in the background |
-| `.deb` or AppImage | **Update Now** in Settings → Updates downloads and installs it |
+| `.deb`, `.rpm`, or AppImage | **Update Now** in Settings → Updates downloads and installs it |
 | Flatpak (from Flathub, once listed) | `flatpak update com.buxjr.melia` — offered with a copy button |
 | Sideloaded snap or Flatpak | Points you back to the download page |
 
@@ -225,7 +234,7 @@ FB77 913C 2C0C 2747 5E40  1B95 50C4 B20B F021 80A0
 
 ## About this repository
 
-This repository hosts release artifacts only: the `.deb`, `.AppImage`, `.flatpak`, and `.snap` builds, the binary tarball the Flatpak build pulls from, the packaging-assets tarball, and `SHA256SUMS` / `SHA256SUMS.asc` for each release. Melia's source is proprietary and lives in a private repository.
+This repository hosts release artifacts only: the `.deb`, `.rpm`, `.AppImage`, `.flatpak`, and `.snap` builds, the binary tarball the Flatpak build pulls from, the packaging-assets tarball, and `SHA256SUMS` / `SHA256SUMS.asc` for each release. Melia's source is proprietary and lives in a private repository.
 
 Issues here are the right place for bug reports and feature requests, and they get read.
 
